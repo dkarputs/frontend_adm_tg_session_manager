@@ -22,20 +22,35 @@ const App: React.FC = () => {
             <Sidebar />
             <div style={{ flexGrow: 1 }}>
                 <Routes>
-                    <Route path="/" element={<ProtectedRoute  element={<Dashboard />}/>} />
-                    <Route path="/proxy" element={<ProtectedRoute  element={<Proxy />}/>} />
-                    <Route path="/all_accounts" element={<ProtectedRoute  element={<AllAccounts />}/>} />
-                    <Route path="/settings" element={<ProtectedRoute  element={<Settings />}/>} />
+                    {/*<Route path="/" element={<ProtectedRoute  element={<Dashboard />}/>} />*/}
+                    {/*<Route path="/proxy" element={<ProtectedRoute  element={<Proxy />}/>} />*/}
+                    {/*<Route path="/all_accounts" element={<ProtectedRoute  element={<AllAccounts />}/>} />*/}
+                    {/*<Route path="/settings" element={<ProtectedRoute  element={<Settings />}/>} />*/}
 
-                    <Route path="/all_users" element={<ProtectedRoute  element={<AllUsers />}/>} />
+                    {/*<Route path="/all_users" element={<ProtectedRoute  element={<AllUsers />}/>} />*/}
 
-                    <Route path="/auto_reply" element={<ProtectedRoute  element={<AutoReply />}/>} />
-                    <Route path="/account_checker" element={<ProtectedRoute  element={<AccountChecker />}/>} />
-                    <Route path="/mass_mailing" element={<ProtectedRoute  element={<MassMailing />}/>} />
-                    <Route path="/formats_converter" element={<ProtectedRoute  element={<FormatsConverter />}/>} />
-                    <Route path="/parser_chats" element={<ProtectedRoute  element={<ParserChats />}/>} />
-                    <Route path="/inviting" element={<ProtectedRoute  element={<Inviting />}/>} />
-                    <Route path="/boosting" element={<ProtectedRoute  element={<Boosting />}/>} />
+                    {/*<Route path="/auto_reply" element={<ProtectedRoute  element={<AutoReply />}/>} />*/}
+                    {/*<Route path="/account_checker" element={<ProtectedRoute  element={<AccountChecker />}/>} />*/}
+                    {/*<Route path="/mass_mailing" element={<ProtectedRoute  element={<MassMailing />}/>} />*/}
+                    {/*<Route path="/formats_converter" element={<ProtectedRoute  element={<FormatsConverter />}/>} />*/}
+                    {/*<Route path="/parser_chats" element={<ProtectedRoute  element={<ParserChats />}/>} />*/}
+                    {/*<Route path="/inviting" element={<ProtectedRoute  element={<Inviting />}/>} />*/}
+                    {/*<Route path="/boosting" element={<ProtectedRoute  element={<Boosting />}/>} />*/}
+
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/proxy" element={<Proxy />} />
+                    <Route path="/all_accounts" element={<AllAccounts />} />
+                    <Route path="/settings" element={<Settings />} />
+
+                    <Route path="/all_users" element={<AllUsers />} />
+
+                    <Route path="/auto_reply" element={<AutoReply />} />
+                    <Route path="/account_checker" element={<AccountChecker />} />
+                    <Route path="/mass_mailing" element={<MassMailing />} />
+                    <Route path="/formats_converter" element={<FormatsConverter />} />
+                    <Route path="/parser_chats" element={<ParserChats />} />
+                    <Route path="/inviting" element={<Inviting />} />
+                    <Route path="/boosting" element={<Boosting />} />
 
                     <Route path="/login" element={<Login />} />
                 </Routes>
